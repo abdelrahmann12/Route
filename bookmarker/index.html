@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="vh-100 p-5">
+        <div class="container">
+            <h1 class="position-relative mx-auto z-1 mb-5">Bookmarker</h1>
+            <hr class="">
+            <h4 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h4>
+
+            <div class="inputs">
+                <label minlength="3" required class="" for="site"><i class="fa-solid fa-book"></i> Site Name</label>
+                <input re f value="" id="site" class="w-100 mb-4 p-1" type="text" placeholder="Bookmark Name">
+
+                <label  for="url"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input required value="" id="url" class="w-100 p-1" type="url" placeholder="Website URL">
+
+                <div class="btn w-100 my-3">
+                    <button  onclick="add()" class="btn" type="submit">Submit</button>
+                </div>
+            </div>
+
+            <table class="w-100">
+                <thead class="">
+                    <tr>
+                        <td>Index</td>
+                        <td>Website Name</td>
+                        <td>Visit</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td>1</td>
+                        <td id="webName">Aeeasas</td>
+                        <td>
+                            <button class="vis btn">
+                                <i class="fa-solid fa-eye"></i> Visit
+                            </button>
+                        </td>
+                        <td>
+                            <button class="del btn">
+                               <i class="fa-solid fa-trash"></i> Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    
+
+    <script src="/js/main.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

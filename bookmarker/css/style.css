@@ -1,0 +1,101 @@
+:root {
+  --primaryColor: #f7ecde;
+  --orangeColor: #fec260;
+}
+
+body {
+  background-color: var(--primaryColor);
+}
+section {
+  background-color: var(--primaryColor);
+
+  .container {
+    h1 {
+      font-family: "Pacifico", cursive;
+      font-size: 50px;
+      width: fit-content;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        background-color: var(--orangeColor);
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: -2;
+        transition: all ease 0.4s;
+      }
+
+      &:hover::before {
+        height: 40px;
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 2px dotted rgb(0, 0, 0);
+    }
+
+    h4 {
+    }
+
+    .inputs{
+
+        label{
+            margin-bottom: 8px;
+        }
+
+        input{
+            border-radius: 5px;
+            border: none;
+        }
+        .btn{
+            
+            button{
+                background-color: #BB4120;
+                color: white;
+                padding: 6px 50px;
+            }
+        }
+    }
+
+
+
+    table{
+        background-color: white;
+
+
+        thead{
+
+            tr{  
+                border-bottom:1px solid grey;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "PT Sans Caption", sans-serif;
+            }
+
+            td{
+              padding: 10px;
+            }
+        }
+        
+        tbody{
+
+          td{
+            padding: 10px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+          }
+            .vis{
+                background-color: #8A9E23;
+                color: white;
+            }
+
+            .del{
+                background-color: rgba(255, 0, 0, 0.788);
+                color: white;
+            }
+        }
+    }
+  }
+}
